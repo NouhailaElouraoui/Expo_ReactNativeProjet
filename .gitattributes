@@ -1,8 +1,17 @@
-# Ignore batch files from language statistics
-*.bat linguist-vendored
+# Exclude batch files and build artifacts from language statistics
+*.bat linguist-vendored linguist-generated
+Fix_Firewall.bat linguist-vendored linguist-generated
+demarrer_tunnel.bat linguist-vendored linguist-generated
+
+# Exclude dependencies and generated files
+node_modules/** linguist-vendored
+.expo/** linguist-vendored
+.dist/** linguist-vendored
 
 # Mark JavaScript files as the primary language
 *.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
 
 # Documentation
 *.md linguist-documentation
+README.md linguist-documentation
