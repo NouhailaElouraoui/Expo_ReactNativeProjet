@@ -1,0 +1,8 @@
+# Ignore batch files from language statistics
+*.bat linguist-vendored
+
+# Mark JavaScript files as the primary language
+*.js linguist-language=JavaScript
+
+# Documentation
+*.md linguist-documentation
